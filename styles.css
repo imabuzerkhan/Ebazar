@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -19,6 +20,11 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #000;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: black;
 }
 
 .brand-name {
@@ -67,7 +73,7 @@ body {
   font-size: 16px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 18px;
 }
 
 .location-button {
