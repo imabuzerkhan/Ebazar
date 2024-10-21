@@ -50,3 +50,11 @@
   font-weight: bold;
 }
 
+
+.product-details a {
+  text-decoration: none;
+}
+
+.product-details .store{
+  color: black;
+}
