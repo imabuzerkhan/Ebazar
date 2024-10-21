@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Store-details {
+  padding: 20px 30px;
+  font-family: sans-serif;
+}
+
+.Store-details h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.mainstore {
+  display: flex;
+  gap: 20px;
+  margin-top: 13px;
+  /* No need for fixed height here */
+}
+
+/* Keep the left side fixed while scrolling */
+.store-details-left {
+  background-color: #f5f5f5;
+  width: 35%; /* Width of the fixed sidebar */
+  margin-top: 130px;
+  padding: 8px 16px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0; /* Ensures it is always fixed on the left side */
+  height: 100vh; /* Occupy full height of the viewport */
+ 
+}
+
+.first-details {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.first-details .text {
+  line-height: 25px;
+}
+
+.first-details .image img {
+  width: 150px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+
+.second-details, .location, .lastdetails {
+  background-color: white;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.second.text {
+  font-family: sans-serif;
+}
+
+.second-text, .location h2 {
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.second-text, .location p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* Right-side product section */
+.product-section-one {
+  width: 65%;
+  margin-left: 38%; /* Moves the product section to the right of the fixed sidebar */
+  padding-left: 20px;
+ 
+  max-height: 100vh; /* Ensures the product section doesn't overflow vertically */
+}
+
+.product-grid-one {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33.333% - 20px); /* Ensures 3 cards per row */
+}
+
+.product-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0;
+}
