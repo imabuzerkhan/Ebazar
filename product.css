@@ -1,3 +1,9 @@
+*{
+
+  box-sizing: border-box;
+}
+
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -8,22 +14,21 @@
 .connection {
   display: flex;
   align-items: center;
-
   gap: 20px;
 }
 
 .preview h1 {
   font-size: 1.4rem;
   color: rgb(0, 0, 0);
+  margin-bottom: 10px;
   font-family: sans-serif;
 }
 
 .preview-section {
   display: flex;
-
   gap: 15px;
   padding: 10px 20px;
-  width: 450px;
+  width: 500px;
   background-color: #f5f5f5;
 }
 
@@ -33,7 +38,15 @@
   object-fit: cover;
 }
 
+.preview-details{
+  margin-right: 10px;
+}
+
 .preview-details h1 {
   font-size: 1rem;
+}
+.green{
+  color: green;
+  font-weight: bold;
 }
 
