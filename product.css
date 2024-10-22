@@ -40,10 +40,13 @@
 
 .preview-details{
   margin-right: 10px;
+  font-family: serif;
+  line-height: 1.4rem;
 }
 
 .preview-details h1 {
   font-size: 1rem;
+  
 }
 .green{
   color: green;
@@ -57,4 +60,15 @@
 
 .product-details .store{
   color: black;
+}
+
+.product-grid-2{
+  display: flex;
+align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-details{
+  line-height: 0.9rem;
 }
