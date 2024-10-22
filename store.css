@@ -26,9 +26,10 @@
 .store-details-left {
   background-color: #f5f5f5;
   width: 35%; 
+  max-height: 100vh;
   padding: 8px 16px;
-  position: fixed;
-  top: 21%;
+  position: sticky;
+  top: 8;
   bottom: 0;
  
 }
@@ -80,13 +81,12 @@
   font-weight: 500;
 }
 
-/* Right-side product section */
+
 .product-section-one {
   width: 65%;
-  margin-left: 38%; /* Moves the product section to the right of the fixed sidebar */
   padding-left: 20px;
  
-  max-height: 100vh; /* Ensures the product section doesn't overflow vertically */
+ 
 }
 
 .product-grid-one {
@@ -102,12 +102,13 @@
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex-basis: calc(33.333% - 20px); /* Ensures 3 cards per row */
+  flex-basis: calc(33.333% - 20px); 
 }
 
 .product-card img {
   width: 100px;
-  height: auto;
+  height: 130px;
+  
   margin-bottom: 10px;
 }
 
